@@ -1,0 +1,35 @@
+\documentclass[a4paper, 10pt, twocolumn]{article}
+
+\usepackage{xeCJK}
+
+\usepackage{minted}
+\newcommand{\displaycpp}[1]{\inputminted[
+      breaklines, breakbytokenanywhere, 
+      breaksymbolleft=, breaksymbolright=,
+      tabsize=2]{c++}{#1}}
+
+
+\usepackage{geometry}
+%acmsig-conf standard
+\geometry{twoside=true, head=13pt,
+  paperwidth=8.5in, paperheight=11in,
+  includeheadfoot, columnsep=2pc,
+  top=57pt, bottom=73pt, inner=54pt, outer=54pt,
+  marginparwidth=2pc,heightrounded }
+
+\pagestyle{headings}
+%\usepackage[CJKbookmarks]{hyperref}
+
+\title{Algorithm Template}
+\author{AQP}
+
+
+\begin{document}
+\maketitle 
+\clearpage
+
+\tableofcontents 
+\clearpage
+\input{dp/dp.tex}
+\input{data_structure/data_structure.tex}
+\end{document}
